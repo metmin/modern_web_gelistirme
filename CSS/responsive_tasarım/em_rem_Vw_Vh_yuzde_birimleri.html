@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em, Rem, Vw, Vh ve % Birimleri</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            background: url("./manzara.jpeg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: black;
+            align-items: center;
+            padding: 10rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <h1>Welcome To The Site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, animi.</p>
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+    em: etiketin parentinin font size ına göre orantılama
+    rem: html etiketinin font size ına göre orantılama
+    %: parent etiketin font size ının yüzdesine göre ayarlama
+    vw: tarayıcımızda gördüğümüz bütün yatay alana göre orantılama
+    vh: tarayıcımızda gördüğümüz bütün dikey alana göre orantılama
+ -->
+
+<!-- 
+     padding ve margin verirken em kullanırken, kendi elementinin font size ına göre orantılama yapar (parent etiketinin font size ına ögöre değil)
+-->
