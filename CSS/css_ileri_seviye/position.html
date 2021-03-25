@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position ve Özellikleri</title>
+
+    <style>
+        .fixed-topbar {
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed;
+            right: 10%;
+            /* VEYA */
+            bottom: 20px;
+            /* display: inline-block; */
+        }
+
+        .red,
+        .blue {
+            width: 200px;
+            height: 200px;
+            /* display: inline-block; */
+        }
+
+        .red {
+            background-color: red;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            /* Kırmızı kutunun mavinin üzerinde görülmesi için, değeri büyük olanı z düzleminde öne çıkarıyoruz */
+            z-index: 1;
+        }
+
+        .blue {
+            background-color: blue;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            /* Mavi kutunun her zaman arkada görülmesi için bu kullanılabilir */
+            z-index: -1;
+        }
+
+        .outer-box {
+            width: 200px;
+            height: 200px;
+            background-color: #a7a7a7;
+            margin: 0 auto;
+            /* Absolute kullanmak için kapsayıcı etiketin positionunun static dışında olması lazım, yoksa sapıtıyor. (default static) */
+            position: relative;
+        }
+
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            /* Position absolute sayesinde konumlandırma kapsayıcı etiketin sınırlarına göre yapılıyor. */
+            position: absolute;
+            bottom: 40%;
+            right: 40%;
+        }
+
+        span {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background-color: red;
+            position: relative;
+            left: 75px;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<!-- Normalde body etiketinin size ı içindeki etiketler kadardır. -->
+
+<body style="height: 1000px;">
+
+    <div class="red"></div>
+
+    <div class="blue"></div>
+
+    <hr style="margin: 20px 0;">
+
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+
+    <hr style="margin: 20px 0;">
+
+    <span></span>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cupiditate minus labore quae soluta fuga reprehenderit consequuntur at nesciunt. Nisi modi obcaecati qui, cumque illo ipsam aspernatur sit magnam. Inventore?
+
+    <div class="fixed-topbar">Footer (Salladım)</div>
+
+</body>
+
+</html>
+
+
+<!-- Bir şeyi sabitlemek için position: fixed -->
+
+<!-- 
+    Bulunduğu yerden position vermek için position: relative 
+    Bu ne demek, top, right özellikleri verdiğimizde olduğu yerden top, right yapsın, direk sağa veya yukarı gitmesin diye.
+-->
+
+<!-- Kapsayıcı etikete göre pozisyon ayarlamak için position: absolute -->

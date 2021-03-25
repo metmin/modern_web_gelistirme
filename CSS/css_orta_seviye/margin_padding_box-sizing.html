@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin - Padding - Box-Sizing</title>
+
+    <style>
+        * {
+            /* Bunları Yaptığımızda tarayıcılardaki default değerleri sıfırlamış oluyoruz. */
+            margin: 0;
+            padding: 0;
+
+            /*
+            Box sizing ile beraber bizim etiketimizin toplam boyutu width kadar ayarlanmış oluyor (margin hariç tabi)!!! ÖNEMLİ.
+            Böylece witdh değerini ayarladığımız bütün kutuların boyutları birebir aynı olucak.
+            */
+            box-sizing: border-box;
+        }
+
+        div.box-1 {
+            background: #a7a7a7;
+            width: 50%;
+
+            /* margin: 20px 50px 10px 50px; */
+
+            /* 
+            Yazıyı Yatay Olarak Ortalamak İçin:
+            margin-left: auto;
+            margin-right: auto;
+            */
+
+            /* VEYA */
+            margin: 10px auto 0 auto;
+
+
+            border: 3px solid red;
+            border-radius: 3px;
+            padding: 10px 5px;
+
+        }
+
+        div.box-2 {
+            background: #a7a7a7;
+            margin: 10px 100px;
+
+            /* width ve height alanları sadece content alanına etki eder. */
+            width: auto;
+            height: 200px;
+
+            border: 5px solid black;
+
+            padding: 40px;
+        }
+
+        div.box-3 {
+            background: #a7a7a7;
+            margin: 10px 100px;
+
+            /* width ve height alanları sadece content alanına etki eder. */
+            width: auto;
+            height: 200px;
+            border: 5px solid coral;
+
+            padding: 100px;
+
+        }
+
+        div.box-4 {
+            background: #a7a7a7;
+            margin: 10px 100px;
+
+            /* width ve height alanları sadece content alanına etki eder. */
+            width: 500px;
+            height: 200px;
+            border: 5px solid goldenrod;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box-1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, reiciendis.
+    </div>
+
+    <br style="margin: 20px;">
+
+    <div class="box-2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quam?
+    </div>
+
+    <br style="margin: 20px;">
+
+    <div class="box-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quam?
+    </div>
+
+    <br style="margin: 20px;">
+
+    <div class="box-4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quam?
+    </div>
+
+</body>
+
+</html>

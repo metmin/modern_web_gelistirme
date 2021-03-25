@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child Selector</title>
+
+    <style>
+        p {
+            font-size: 1.5em;
+        }
+
+        ul {
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+
+        /* for(n = 0; n <= child sayısı; n++) */
+        ul li:nth-child(2n + 8) {
+            color: red;
+        }
+
+        /* 
+        p:first-child {
+            background: coral;
+        }
+
+        p:last-child {
+            background: darkgoldenrod;
+        }
+
+        p:nth-child(1) {
+            color: red;
+        }
+
+        p:nth-child(3) {
+            color: blueviolet
+        }
+        */
+
+        /*
+        p:nth-child(odd) {
+            color: red;
+        }
+
+        p:nth-child(even) {
+            color: blue;
+        }
+        */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Aşağıdaki elementler yukardan aşağı 1-5 arasında body etketinin çocukları -->
+
+    <!-- 
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, mollitia!
+    </p> 
+    
+    -->
+
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+
+</body>
+
+</html>

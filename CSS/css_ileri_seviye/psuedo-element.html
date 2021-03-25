@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element</title>
+
+    <style>
+        .para1 {
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            /* em direk font-size aldığı için 1.5 x 1.5 em olmuş oluyor aslında */
+            line-height: 1.5em;
+        }
+
+        .para1::first-line {
+            color: coral;
+        }
+
+        .para1::first-letter {
+            font-size: 2em; /* 2 x 1.5 em oldu yukardaki font sizedan dolayı*/ 
+            color: blueviolet;
+        }
+
+        .para1::after {
+            content: url("https://image.flaticon.com/icons/png/512/87/87390.png");
+            /* content: url("image-folder/image.png"); */
+        }
+
+        .para1::before {
+            content: "Paragraf Öncesi";
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corrupti libero cum voluptate quisquam
+        unde cupiditate, excepturi molestiae provident dicta odio minus ab dolorum. Earum quasi, tempore dolores iusto
+        fugit distinctio veniam a. Et, quaerat rerum? Distinctio commodi velit sapiente, dolorum corporis ipsa hic
+        possimus odit eaque provident fugiat placeat repellendus? In officia maxime dolorum magni eligendi, est alias
+        porro iusto aspernatur qui minus cum placeat tempore, aperiam natus harum omnis enim vero! Animi facere nihil
+        voluptates! Blanditiis, cupiditate fugit minus ex sit perspiciatis veritatis corporis et aspernatur placeat
+        consequatur consequuntur atque magnam architecto, sed autem vel cumque, quidem quis?</p>
+
+</body>
+
+</html>

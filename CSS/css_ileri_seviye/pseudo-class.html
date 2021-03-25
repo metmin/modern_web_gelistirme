@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        /*
+        Kullanım:
+
+        Selector: psuedo_class {
+            efekt
+        }
+        
+        */
+
+        a {
+            font-size: 24px;
+        }
+
+        /* a etitekine hiç!! tıklanmamışsa */
+        a:link {
+            color: rgb(33, 226, 33);
+        }
+
+        /* a etiketine tıklanmışsa */
+        a:visited {
+            color: coral;
+        }
+
+        /* a etiketine tıklarken */
+        a:active {
+            color: powderblue;
+        }
+
+        a:hover {
+            font-size: 2rem;
+        }
+
+        input {
+            font-size: 1.5em;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        input:focus {
+            outline: 0;
+            border: 1px solid coral;
+        }
+
+        a#facebook {
+            color: white;
+            font-size: 1.5em;
+            /* inline bir elemente width ve height verebilmek için inline-block */
+            display: inline-block;
+            background-color: blue;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        a#facebook:hover {
+            color: blue;
+            background: white;
+            border: 1px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input type="text" placeholder="Name">
+
+    <hr>
+
+    <a href="#">This is a link</a>
+
+    <hr>
+
+    <a id="facebook" href="#">Facebook</a>
+
+</body>
+
+</html>
+
+<!-- yime w3schools sitesinde psuedo_class çeşitlerini bulabilirsin -->

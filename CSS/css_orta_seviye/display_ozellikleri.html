@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Özellikleri</title>
+
+
+    <style>
+        .box {
+            width: 50%;
+            height: 100px;
+        }
+
+        .box.box1 {
+            background: darkgreen;
+        }
+
+        .box.box2 {
+            background: darkmagenta;
+        }
+
+        #test-link {
+            background: darksalmon;
+            width: 100px;
+            height: 100px;
+            /* Normalde biz display inline yapınca verdiğimiz with ve height değerleri geçersiz oluyor. */
+            /* inline-block kullanıldığında biz width ve height verebiliyoruz.  */
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box box1"></div>
+
+    <br style="margin: 100px;">
+    
+    <div class="box box2"></div>
+    
+    <br style="margin: 100px;">
+
+    <a href="#" id="test-link">Test Link</a>
+
+</body>
+
+</html>

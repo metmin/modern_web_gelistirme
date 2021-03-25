@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+
+<body>
+
+    <form method="GET" action="">
+
+        <!-- label for yapıldığında Label a tıklandığında text seçili oluyor -->
+        <!-- inputtaki name özelliği get veya post methodundaki key -->
+        <label for="name">Name</label> <br>
+        <input type="text" id="name" name="name" placeholder="isim yaz">
+
+        <hr>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email">
+
+        <hr>
+
+        <label for="password">Parola</label> <br>
+        <input type="password" name="pass" id="password">
+
+        <hr>
+
+        <label for="date">Tarih</label> <br>
+        <input type="date" name="date" id="date">
+
+        <hr>
+
+        Gender <br>
+        <input type="radio" name="gender" id="male" value="male" checked> Male
+        <input type="radio" name="gender" id="female" value="female"> Female
+
+        <hr>
+
+        Bilgisayarlar: <br>
+        <input type="checkbox" name="msi" id="msi"> Msi
+        <input type="checkbox" name="asus" id="asus"> Asus
+        <input type="checkbox" name="dell" id="dell"> Dell
+
+        <hr>
+
+        Eğitim Durumu <br>
+
+        <select name="degree" id="degree">
+            <option value="ilkokul">İlkokul</option>
+            <option value="ortaokul">Orta Okul</option>
+            <option value="lise">Lise</option>
+            <option value="universite" selected>Üniversite</option>
+        </select>
+
+        <hr>
+
+        Öneriler <br>
+        <textarea name="message" id="message" cols="70" rows="10" placeholder="Yazı Yaz"></textarea>
+
+        <hr>
+
+        <!-- İkisi de aynı -->
+        <input type="submit" value="Gönder">
+        <!-- button type="submit">Gönder</button -->
+
+        <hr>
+
+        <!-- İkisi de aynı -->
+        <input type="reset" value="Sıfırla">
+        <!-- button type="reset">Sıfırla</button -->
+
+        <hr>
+
+    </form>
+
+</body>
+
+</html>
+
+<!-- W3Shools' Da Bütün form ve input özellikleri var -->
