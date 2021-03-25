@@ -1,7 +1,25 @@
 #navbar {
     flex-direction: column;
     padding: 0.5rem 0;
+    /* Taşmayı engellemek için */
     overflow: hidden;
     height: 80px;
     font-size: 0.9rem;
+}
+
+#training .items {
+    flex-direction: column;
+}
+
+#training .items .item {
+    width: 100%;
+}
+
+.courses .course { 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courses .course .course-image {
+    margin: 0 auto 1rem auto;
 }

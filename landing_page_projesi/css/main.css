@@ -14,6 +14,7 @@ html {
     font-family: "Ubuntu", sans-serif;
 }
 
+
 /*  Navbar  */
 #navbar {
     color: #fff;
@@ -40,6 +41,7 @@ html {
 }
 /*  Navbar Bitti  */
 
+
 /* Home Section */
 #home {
     display: flex;
@@ -49,13 +51,133 @@ html {
     padding: 2rem;
     border-bottom: 1px solid grey;
 }
+
 #home img {
     max-width: 100%;
     height: auto;
-    /* Height' a göre % alıyor */
+    /* border-radius: 100% diyince height aa göre % alıyor */
     border-radius: 100%;
 }
 
+#home .name h2 {
+    margin-bottom: 0.5rem;
+}
 
+#home .name p {
+    opacity: 0.7;
+    font-style: italic;
+}
 /* Home Section Bitti */
 
+/* Training */
+#training {
+    color: #fff;
+    padding: 1rem;
+}
+
+#training .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training .items .item {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#training .items .item:hover {
+    color: red;
+    opacity: 0.6;
+}
+/* Training Bitti */
+
+
+/* Courses */
+
+/* Bu section id si */
+#courses {
+    color: #333;
+    padding: 1rem;
+}
+
+/* Bu ise kursları kapsayan ana div */
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.courses .course {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.courses .course .course-image {
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.courses .course .course-image img{
+    border-radius: 5px;
+}
+
+.courses .course .course-image span {
+    background: red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* course infodaki bütün elemanlara bunları uygula. */
+.courses .course .course-info *{ 
+    letter-spacing: 1.2px;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.courses .course .course-info .title{
+    font-weight: 700px;
+}
+
+.courses .course .course-info .instructor{ 
+    font-size: 0.8rem;
+
+}
+/* Courses Bitti */
+
+
+/* Contact */
+#contact {
+    color: #fff;
+    padding: 1rem;
+}
+
+#contact .contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form ul {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contact .contact-form ul li a {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#contact .contact-form ul li a:hover {
+    opacity: 0.8;
+}
+/* Contact Bitti */
