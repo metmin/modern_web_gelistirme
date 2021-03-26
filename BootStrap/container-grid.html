@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap' de Container ve Grid Yapısı</title>
+
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <style>
+        .box {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Grid System -->
+        <div class="row">
+            <!-- col vererek bunları yan yana getiriyoruz -->
+            <!-- col-2 gibi şeyler vererek de 12 parçayı dağıtıyoruz -->
+            <!-- eğer 12 parçayı tamamlamazsak kalan parçaların yeri doldurulmayacak boş gelecek. -->
+            <div class="box bg-danger col-2"></div>
+            <div class="box bg-primary col-4"></div>
+            <div class="box bg-success col-6"></div>
+        </div>
+    </div>
+
+    <div class="clear" style="margin: 5rem 0;"></div>
+
+    <div class="container">
+        <div class="row">
+            <!-- col-sm, col-lg gibi özellikler ile beraber küçük ekranlara geçtiğimizde sıralamayı satır satır yapmaya başlıyor. -->
+            <div class="box bg-danger col-sm"></div>
+            <div class="box bg-primary col-sm"></div>
+            <div class="box bg-success col-sm"></div>
+        </div>
+    </div>
+
+    <div class="clear" style="margin: 5rem 0;"></div>
+
+    <div class="container">
+        <div class="row">
+            <!-- col-md-4 ile medium ekranlara geldiğimizde, solda verilen col-6 daki 6 yı kullanıcak. ekranın yarısını kaplar 6 verdiğimiz için  -->
+            <!-- Eğer ilk itemde col-6 olmasaydı medium ekrana geçtiğimizde ekranın tamamını kaplayacaktı. -->
+            <div class="box bg-danger col-6 col-md-4"></div>
+            <div class="box bg-primary col-md-8"></div>
+        </div>
+    </div>
+
+    <div class="clear" style="margin: 5rem 0;"></div>
+
+    <!-- BootStrapde style vermek yerine direk class kullanarak rowları yönetebiliriz. -->
+    <div class="row justify-content-around align-items-center bg-dark" style="height: 600px;">
+        <div class="box bg-danger col-2"></div>
+        <div class="box align-self-end bg-primary col-2"></div>
+        <div class="box align-self-start bg-success col-2"></div>
+    </div>
+
+
+    <!-- BootStrap JS Fonksiyonları -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- Bootstrap grid sisteminde her bir blok 12 eşit parçaya bölünür -->
